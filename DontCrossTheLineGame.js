@@ -14,7 +14,7 @@ export default function DontCrossTheLineGame() {
 
   useEffect(() => {
     // Initialize WebSocket connection
-    socketRef.current = new WebSocket('ws://your-websocket-server-url');
+    socketRef.current = new WebSocket('https://jlegends.github.io/TronGame.github.io/');
 
     socketRef.current.onmessage = (event) => {
       const data = JSON.parse(event.data);
